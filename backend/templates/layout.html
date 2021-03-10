@@ -1,0 +1,30 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} - One or Zero</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
+<nav class="no-select">
+    {% for message in get_flashed_messages() %}
+    <div class="flash">{{ message }}</div>
+    {% endfor %}
+    <div id="nav">
+        <a class="logo" href='/'>
+            <img src="{{ url_for('static', filename='/img/logo.png') }}">
+        </a>
+        <ul class="horiz-list">
+            <li>
+                <a href="/">
+                    Search
+                </a>
+            </li>
+            <li>
+                <a href="/wiki">
+                    Wiki
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<section id="content" class="no-select">
+    {% block content %}
+    {% endblock %}
+</section>

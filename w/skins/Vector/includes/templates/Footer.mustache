@@ -1,0 +1,53 @@
+{{!
+	@typedef object footerItem
+	@prop string id of list item element
+	@prop string html of list item
+	@prop footerItem[] items
+
+	@typedef object footerRow
+	@prop string className of list element
+	@prop string id of list element
+	@prop footerItem[] array-items
+
+	string html-hook-vector-before-footer output of VectorBeforeFooter hook
+	string|null html-userlangattributes a string of attribute HTML
+	footerRow[] array-footer-rows iterable list of footer rows
+}}
+{{{html-hook-vector-before-footer}}}
+{{! `role` is unnecessary but kept to support selectors in any gadgets or user styles and
+	to mitigate a VoiceOver bug. }}
+<footer id="footer" class="mw-footer" role="contentinfo" {{{html-userlangattributes}}}>
+	<div id="constrain">
+		{{#array-footer-rows}}
+		<ul id="{{id}}" {{#className}}class="{{.}}"{{/className}}>
+			{{#array-items}}
+			<li id="{{id}}">{{{html}}}</li>
+			{{/array-items}}
+		</ul>
+		{{/array-footer-rows}}
+		<ul>
+			<ul>
+				<li>
+					<img src="http://localhost:5000/static/img/full-res-icon.png"/>
+				</li>
+				<li>
+					<p>Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply.</p>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="https://wiki.oneorzero.org/Special:ContributionScores">Edit leaderboard</a>
+				</li>
+				<li>
+					<a href="http://localhost/index.php/One_or_Zero:About">About One or Zero</a>
+				</li>
+				<li>
+					<a href="http://localhost/index.php/One_or_Zero:Privacy_policy">Privacy policy</a>
+				</li>
+				<li>
+					<a href="http://localhost/index.php/One_or_Zero:General_disclaimer">Disclaimers</a>
+				</li>
+			</ul>
+		</ul>
+	</div>
+</footer>

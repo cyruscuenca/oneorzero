@@ -1,0 +1,138 @@
+{% extends 'layout.html' %}
+
+{% block title %} Search {% endblock %}
+{% block content %}
+<style>
+    .search {
+        width: calc(100% - 40px);
+        max-width: 650px;
+        margin: 0 auto;
+        height: calc(100vh - 60px);
+        position: relative;
+        text-align: center;
+    }
+
+    .search h1 {
+        font-weight: 400;
+        font-size: 28pt;
+        line-height: 28pt;
+        color: #268bd2;
+    }
+
+    .search .icon {
+        height: 36px;
+        width: 36px;
+        padding: 12px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.16);
+        display: inline-block;
+        margin-top: 15vh;
+    }
+
+    .search .icon img {
+        height: 36px;
+        width: 36px;
+        display: inline-block;
+    }
+
+    .search input {
+        width: calc(100% - (18px * 2));
+        padding: 14px 18px;
+        background-color: #fff;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.16);
+    }
+
+    .search input:focus {
+        background-color: #fff;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.16);
+    }
+
+    .quick-links {
+        width: calc(100% - 2px);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 155px;
+        grid-template-rows: 38px 38px 38px;
+        text-align: left;
+        margin-top: 38px;
+    }
+
+    .quick-links li a img {
+        height: 28px;
+        vertical-align: middle;
+        margin-right: 12px;
+    }
+</style>
+<section class="content" style="background-color: #f8f9f9;">
+    <div class="search">
+        <a class="icon" href="/">
+            <img src="{{ url_for('static', filename='/img/full-res-icon.png') }}">
+        </a>
+        <h1>{{ quip }}</h1>
+        <input placeholder="Search devices" class="round-med"/>
+        <ul class="quick-links">
+            <li>
+                <a href="/charts/processors">
+                    <img src="https://img.icons8.com/color/48/000000/smartphone-cpu.png"/>
+                    Processors
+                </a>
+            </li>
+            <li>
+                <a href="/charts/graphics-cards">
+                    <img src="https://img.icons8.com/color/48/000000/video-card.png"/>
+                    Graphics Cards
+                </a>
+            </li>
+            <li>
+                <a href="/charts/motherboards">
+                    <img src="https://img.icons8.com/color/48/000000/motherboard.png"/>
+                    Motherboards
+                </a>
+            </li> 
+            <li>
+                <a>
+                    <a href="/charts/memory">
+                    <img src="https://img.icons8.com/color/48/000000/memory-slot.png"/>
+                    Memory
+                </a>
+            </li>
+            <li>
+                <a>
+                    <a href="/charts/drives">
+                    <img src="https://img.icons8.com/color/48/000000/hdd.png"/>
+                    Drives
+                </a>
+            </li>
+            <li>
+                <a>
+                    <a href="/charts/power-supplies">
+                    <img src="https://img.icons8.com/emoji/48/000000/electric-plug.png"/>
+                    Power Supplies
+                </a>
+            </li>
+            <li>
+                <a>
+                    <a href="/charts/cases">
+                    <img src="https://img.icons8.com/plumpy/50/000000/servers-group.png"/>
+                    Cases
+                </a>
+            </li>
+            <li>
+                <a>
+                    <a href="/charts/coolers">
+                    <img src="https://img.icons8.com/color/48/000000/cold.png"/>
+                    Coolers
+                </a>
+            </li>
+            <li>
+                <a>
+                    <a href="/charts/fans">
+                    <img src="https://img.icons8.com/plasticine/100/000000/fan-speed.png"/>
+                    Fans
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+{% endblock %}

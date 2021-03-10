@@ -1,0 +1,2 @@
+[2021-02-20 03:33:00.960] [renderer1] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/var/www/html/deal-consumer/w/.vscode'
+[2021-02-20 04:55:50.478] [renderer1] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/var/www/html/deal-consumer/.vscode'

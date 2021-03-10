@@ -1,0 +1,9 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} - One or Zero</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
+
+<section class="no-select" style="overflow: hidden;">
+    {% block content %}
+    {% endblock %}
+</section>

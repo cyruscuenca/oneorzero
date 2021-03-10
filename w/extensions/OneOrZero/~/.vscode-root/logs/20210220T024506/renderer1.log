@@ -1,0 +1,1 @@
+[2021-02-20 02:45:07.428] [renderer1] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/var/www/html/deal-consumer/w/extensions/OneOrZero/.vscode'

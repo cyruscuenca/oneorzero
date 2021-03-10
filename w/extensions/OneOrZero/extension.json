@@ -1,0 +1,64 @@
+{
+  "name": "OneOrZero",
+  "author": [
+    "Pierre Schmitz"
+  ],
+  "url": "https://www.oneorzero.org/wiki/",
+  "description": "OneOrZero global navigation",
+  "license-name": "GPL-2.0+",
+  "type": "skin",
+  "AutoloadClasses": {
+    "MediaWiki\\Extensions\\OneOrZero\\Hooks": "OneOrZero.hooks.php"
+  },
+  "Hooks": {
+    "BeforePageDisplay": [
+      "MediaWiki\\Extensions\\OneOrZero\\Hooks::onBeforePageDisplay"
+    ],
+    "AfterFinalPageOutput": [
+      "MediaWiki\\Extensions\\OneOrZero\\Hooks::onAfterFinalPageOutput"
+    ],
+    "PageSaveComplete": [
+      "MediaWiki\\Extensions\\OneOrZero\\Hooks::onPageSaveComplete"
+    ]
+  },
+  "ResourceModules": {
+    "zzz.ext.oneorzero.styles": {
+      "targets": [
+        "mobile",
+        "desktop"
+      ],
+      "styles": [
+        "archnavbar/archnavbar.less",
+        "archnavbar/responsive.less",
+        "arch_common.less"
+      ],
+      "skinStyles": {
+        "vector": "skins/vector.less",
+        "monobook": "skins/monobook.less"
+      },
+      "position": "top"
+    }
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "modules",
+    "remoteExtPath": "OneOrZero/modules"
+  },
+  "ConfigRegistry": {
+    "oneorzero": "GlobalVarConfig::newInstance"
+  },
+  "config": {
+    "NavBar": {
+      "value": []
+    },
+    "OneOrZeroHome": {
+      "value": ""
+    },
+    "NavBarSelected": {
+      "value": []
+    },
+    "NavBarSelectedDefault": {
+      "value": ""
+    }
+  },
+  "manifest_version": 2
+}

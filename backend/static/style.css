@@ -93,7 +93,7 @@ footer {
 }
 
 .round-soft {
-    border-radius: 10px;
+    border-radius: 14px;
 }
 
 .round-med {
@@ -134,5 +134,5 @@ input {
 }
 
 .shadowed-hard {
-    box-shadow: 0 1px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 6px rgba(0,0,0,0.18);
 }

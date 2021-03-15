@@ -151,6 +151,10 @@ wfLoadExtension( 'OneOrZero' );
 wfLoadExtension( 'ParserFunctions' );
 wfLoadExtension( 'intersection' );
 wfLoadExtension( 'ContributionScores' );
+wfLoadExtension( 'Flow' );
+
+$wgNamespaceContentModels[NS_TALK] = 'flow-board';
+$wgNamespaceContentModels[NS_USER_TALK] = 'flow-board';
 $wgContribScoreIgnoreBots = true;          // Exclude Bots from the reporting - Can be omitted.
 $wgContribScoreIgnoreBlockedUsers = true;  // Exclude Blocked Users from the reporting - Can be omitted.
 $wgContribScoresUseRealName = true;        // Use real user names when available - Can be omitted. Only for MediaWiki 1.19 and later.

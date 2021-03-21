@@ -17,8 +17,8 @@
     "AfterFinalPageOutput": [
       "MediaWiki\\Extensions\\OneOrZero\\Hooks::onAfterFinalPageOutput"
     ],
-    "PageSaveComplete": [
-      "MediaWiki\\Extensions\\OneOrZero\\Hooks::onPageSaveComplete"
+    "EditFilter": [
+      "MediaWiki\\Extensions\\OneOrZero\\Hooks::onEditFilter"
     ]
   },
   "ResourceModules": {

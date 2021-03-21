@@ -27,14 +27,13 @@ nav {
 }
 
 #nav {
-    width: calc(100% - 24px);
+    width: 100%;
     margin: 0 auto;
     height: 56px;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 200px 1fr;
-    background: #F8F9F9;
-    border-bottom: 1px solid #e5e7e9;
+    background: #fff;
     box-sizing: border-box;
 }
 

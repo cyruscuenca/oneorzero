@@ -6,7 +6,7 @@
     {% for message in get_flashed_messages() %}
     <div class="flash">{{ message }}</div>
     {% endfor %}
-    <div id="nav">
+    <div id="nav" class="shadowed-hard">
         <a class="logo" href='/'>
             <img src="{{ url_for('static', filename='/img/logo.png') }}">
         </a>

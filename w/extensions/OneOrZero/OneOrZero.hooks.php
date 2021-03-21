@@ -7,7 +7,7 @@ use MediaWiki\Revision\RenderedRevision;
 use User;
 use CommentStoreComment;
 use Status;
-
+use RawMessage;
 
 class Hooks
 {
@@ -31,9 +31,24 @@ class Hooks
     }
     
     // Update One or Zero product database when product pages are updated
-    public static function onPageSaveComplete($wikiPage, $user, $summary, $flags, $revisionRecord, $editResult) {
+    public static function onEditFilter($editor, $text, $section, &$error, $summary) { 
 
-        self::httpPost("http://localhost:1738/madeline", ['data' => json_encode(['wikiPage' => $wikiPage, 'user' => $user, 'summary' => $summary, 'flags' => $flags, 'revisionRecord' => $revisionRecord, 'editResult' => $editResult])]);
+        $response = self::httpPost("http://localhost:1738/madeline", ['data' => json_encode(['wikiPage' => $text])]);
+        $response = json_decode($response, true);
+
+        if ($response == '') {
+
+            $error = '<li class="edit-error">' . "ERROR: The edit validation service cannot be reached. Please contact User:Jobgh to get this issue resolved." . "</li>";
+            return true;
+        }
+
+        if (json_encode($response) != '{"message":"success"}') {
+
+            $error = '<li class="edit-error">' . $response['message'] . "</li>";
+        }
+
+        // $response should be true on success, and false on fail
+        // false cancels the article save
         return true;
     }
 

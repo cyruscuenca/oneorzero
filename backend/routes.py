@@ -57,7 +57,27 @@ def compare(product_class):
     json_encoded = json.dumps(uniques)
     product_class = product_class.replace('-', ' ')
 
-    return render_template('/pages/chart.html', header=product_class, products=json_encoded)
+    valid_axes = [
+        'launch_date',
+        'compute_units',
+        'base_freq',
+        'boost_freq',
+        'ray_accel',
+        'max_perf',
+        'fp16_perf',
+        'fp32_perf',
+        'fp64_perf',
+        'stream_processors',
+        'trans_count',
+        'tbp_d',
+        'mem_speed',
+        'mem_size',
+        'mem_type',
+        'mem_interf',
+        'mem_band'
+    ]
+
+    return render_template('/pages/chart.html', header=product_class, products=json_encoded, valid_axes=valid_axes)
 
 @app.route('/:class/<slug>/')
 def product(slug):

@@ -171,3 +171,8 @@ $wgContribScoreReports = array(
 $wgShowExceptionDetails = true;
 
 $wgDebugLogFile = "/var/log/mediawiki/debug-{$wgDBname}.log";
+
+# Prevent new user registrations by anyone
+$wgGroupPermissions['*']['createaccount'] = false;
+$wgGroupPermissions['sysop']['createaccount'] = false;
+$wgExternalLinkTarget = '_blank';

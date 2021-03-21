@@ -127,6 +127,10 @@ for i in range(len(df.index)):
         except:
 
             pass
+    
+    for i, technology in enumerate(technologies):
+
+        technologies[i] = technology.strip(' ')
 
     data['supported_tech'] = technologies
 

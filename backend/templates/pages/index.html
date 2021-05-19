@@ -25,7 +25,7 @@
         padding: 14px;
         border-radius: 50%;
         background-color: #fff;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.16);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
         display: inline-block;
         margin-top: 12vh;
     }
@@ -40,14 +40,14 @@
         width: calc(100% - (20px * 2));
         padding: 14px 20px;
         background-color: #fff;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.16);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
         border-radius: 8px;
         text-indent: 0;
     }
 
     .search input:focus {
         background-color: #fff;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.16);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
     }
 
     .search svg {
@@ -84,7 +84,7 @@
         padding-right: 24px;
     }
 
-    footer > * {
+    footer>* {
         display: inline-block;
         height: 100%;
         line-height: 32px;
@@ -95,7 +95,7 @@
         width: calc(100% - (20px * 2));
         padding: 14px 20px;
         background-color: #fff;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.16);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
         border-radius: 0 0 8px 8px;
         text-align: left;
         margin: 0;
@@ -107,6 +107,10 @@
         height: 30px;
         line-height: 30px;
         font-size: 11pt;
+    }
+
+    #results li a {
+        font-weight: 500;
     }
 
     .expanded {
@@ -125,75 +129,92 @@
         <img src="{{ url_for('static', filename='/img/full-res-icon.png') }}">
     </a>
     <h1>{{ quip }}</h1>
-    <input placeholder="Search devices" class="round-med" id="search" autocomplete="off"/>
-    <svg onclick="referSearch()" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+    <input placeholder="Search devices" class="round-med" id="search" autocomplete="off" />
+    <svg onclick="referSearch()" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+        fill="#000000">
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path
+            d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+    </svg>
     <ul id="results"></ul>
     <ul class="quick-links">
         <li>
             <a href="/charts/cpus">
-                <img src="https://img.icons8.com/color/48/000000/smartphone-cpu.png"/>
+                <img src="https://img.icons8.com/color/48/000000/smartphone-cpu.png" />
                 Processors
             </a>
         </li>
         <li>
             <a href="/charts/gpus">
-                <img src="https://img.icons8.com/color/48/000000/video-card.png"/>
+                <img src="https://img.icons8.com/color/48/000000/video-card.png" />
                 Graphics Cards
             </a>
         </li>
         <li>
             <a href="/charts/motherboards">
-                <img src="https://img.icons8.com/color/48/000000/motherboard.png"/>
+                <img src="https://img.icons8.com/color/48/000000/motherboard.png" />
                 Motherboards
             </a>
-        </li> 
+        </li>
         <li>
             <a>
                 <a href="/charts/memory">
-                <img src="https://img.icons8.com/color/48/000000/memory-slot.png"/>
-                Memory
-            </a>
+                    <img src="https://img.icons8.com/color/48/000000/memory-slot.png" />
+                    Memory
+                </a>
         </li>
         <li>
             <a>
                 <a href="/charts/drives">
-                <img src="https://img.icons8.com/color/48/000000/hdd.png"/>
-                Drives
-            </a>
+                    <img src="https://img.icons8.com/color/48/000000/hdd.png" />
+                    Drives
+                </a>
         </li>
         <li>
             <a>
                 <a href="/charts/power-supplies">
-                <img src="https://img.icons8.com/emoji/48/000000/electric-plug.png"/>
-                Power Supplies
-            </a>
+                    <img src="https://img.icons8.com/emoji/48/000000/electric-plug.png" />
+                    Power Supplies
+                </a>
         </li>
         <li>
             <a>
                 <a href="/charts/cases">
-                <img src="https://img.icons8.com/plumpy/50/000000/servers-group.png"/>
-                Cases
-            </a>
+                    <img src="https://img.icons8.com/plumpy/50/000000/servers-group.png" />
+                    Cases
+                </a>
         </li>
         <li>
             <a>
                 <a href="/charts/coolers">
-                <img src="https://img.icons8.com/color/48/000000/cold.png"/>
-                Coolers
-            </a>
+                    <img src="https://img.icons8.com/color/48/000000/cold.png" />
+                    Coolers
+                </a>
         </li>
         <li>
             <a>
                 <a href="/charts/fans">
-                <img src="https://img.icons8.com/plasticine/100/000000/fan-speed.png"/>
-                Fans
-            </a>
+                    <img src="https://img.icons8.com/plasticine/100/000000/fan-speed.png" />
+                    Fans
+                </a>
         </li>
     </ul>
 </div>
 <footer>
     <span style="color: #909497; float: left;">
-        <svg style="vertical-align: top; margin-top: 8px;" fill="#2ecc71" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><g><rect fill="none" height="24" width="24"/><rect fill="none" height="24" width="24"/></g><g><g><path d="M6.05,8.05c-2.73,2.73-2.73,7.15-0.02,9.88c1.47-3.4,4.09-6.24,7.36-7.93c-2.77,2.34-4.71,5.61-5.39,9.32 c2.6,1.23,5.8,0.78,7.95-1.37c2.99-2.99,3.83-11.14,4.01-13.38c0.02-0.31-0.23-0.56-0.53-0.53C17.19,4.22,9.04,5.06,6.05,8.05z"/></g></g></svg>
+        <svg style="vertical-align: top; margin-top: 8px;" fill="#2ecc71" xmlns="http://www.w3.org/2000/svg"
+            enable-background="new 0 0 24 24" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
+            <g>
+                <rect fill="none" height="24" width="24" />
+                <rect fill="none" height="24" width="24" />
+            </g>
+            <g>
+                <g>
+                    <path
+                        d="M6.05,8.05c-2.73,2.73-2.73,7.15-0.02,9.88c1.47-3.4,4.09-6.24,7.36-7.93c-2.77,2.34-4.71,5.61-5.39,9.32 c2.6,1.23,5.8,0.78,7.95-1.37c2.99-2.99,3.83-11.14,4.01-13.38c0.02-0.31-0.23-0.56-0.53-0.53C17.19,4.22,9.04,5.06,6.05,8.05z" />
+                </g>
+            </g>
+        </svg>
         100% of profits are donated to Team Trees
     </span>
     <a href="/about">About</a>
@@ -203,10 +224,20 @@
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script>
     // Force JavaScript to run on back
-    window.onunload = function(){}; 
+    window.onunload = function () { };
+
+    document.getElementById('search').addEventListener("keyup", function (event) {
+
+        if (event.keyCode === 13) {
+
+            event.preventDefault()
+            console.log(document.querySelector('.search svg'))
+            document.querySelector('.search svg').dispatchEvent(new Event('click'))
+        }
+    })
 
     document.getElementById('search').addEventListener('input', search)
-    
+
     document.querySelector('html').addEventListener('click', () => {
 
         manipulateResults(false)
@@ -214,15 +245,15 @@
 
     document.querySelector('#search').addEventListener('click', (e) => {
 
-       e.stopPropagation()
+        e.stopPropagation()
     })
 
     document.querySelector('.search svg ').addEventListener('click', (e) => {
 
-       e.stopPropagation()
+        e.stopPropagation()
     })
 
-    function manipulateResults (action) {
+    function manipulateResults(action) {
 
         if (action) {
 
@@ -235,15 +266,15 @@
         }
     }
 
-    function referSearch () {
-        
+    function referSearch() {
+
         const endpoint = 'https://wiki.oneorzero.org/index.php?search='
         const term = document.getElementById('search').value.trim()
 
         window.location.assign(endpoint + term);
     }
 
-    function search (e) {
+    function search(e) {
 
         const endpoint = 'https://wiki.oneorzero.org/api.php?'
         const params = {
@@ -259,17 +290,17 @@
 
             let matches = res.data.query
             let noResults = false
-            
+
             if (matches == undefined) {
 
                 noResults = true
             } else {
-                
+
                 if (matches.search.length == 0) {
 
                     noResults = true
                 } else {
-                    
+
                     matches = matches.search
                 }
             }
@@ -279,7 +310,7 @@
                 matches = [
                     {
                         "ns": 0,
-                        "title": "No matches found",
+                        "title": "No results found",
                         "pageid": 0,
                         "size": 0,
                         "wordcount": 3,
@@ -299,7 +330,7 @@
                 link.textContent = matches[i].title
                 link.href = 'https://wiki.oneorzero.org/view/' + matches[i].title.replace(/\s+/g, '_')
 
-                if (link.title = 'No results found') {
+                if (matches[i].title == 'No results found') {
 
                     link.href = 'https://wiki.oneorzero.org/index.php?search=' + document.getElementById('search').value.trim()
                 }

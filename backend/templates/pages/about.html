@@ -1,0 +1,72 @@
+{% extends 'layout-back.html' %}
+
+{% block title %} About {% endblock %}
+{% block content %}
+<style>
+    .chibi-banner {
+        height: 192px;
+        position: relative;
+        margin-bottom: 14px;
+    }
+    .chibi-banner h1 {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 0;
+    }
+    .chibi-banner img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+</style>
+<div class="banner" style="background-image: url({{ url_for('static', filename='img/banners/banner-light.webp') }})">
+    <div class="tint"></div>
+</div>
+<div class="col col-1 prettify center pillar-text" style="padding-bottom: 60px;">
+    <div class="chibi-banner">
+        <img height="192" width="192" src="{{ url_for('static', filename='img/chibi 5.png') }}"/>
+        <h1>About One or Zero</h1>
+    </div>
+    <p><a href="/">One or Zero</a> is a computing hardware website built in the spirit of collaboration. The core of the <a href="/">One or Zero</a> system is built on top of the popular <a href="https://www.mediawiki.org">MediaWiki</a> application, known for it's use by <a href="https://www.wikipedia.org">Wikipedia</a>. <a href="https://www.mediawiki.org">MediaWiki</a> at our core enables us to leverage an extensive dataset of product information to power our <a href="https://charts.oneorzero.org">One or Zero Charts</a> tool.</p>
+    <p>As of now, anything other than <a href="https://www.mediawiki.org">MediaWiki</a> functionaility was designed developed by <a href="https://sleepcoderepeat.com">Cyrus Cuenca</a>. The wiki is made possible by our generous <a href="https://wiki.oneorzero.org/Special:ContributionScores">contributers</a>.</p>
+    <h2>One or Zero by The Numbers</h2>
+    <ul class="col col-3">
+        <li class="card card-single-line round-med bordered">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+            <p>
+                null
+                Documents
+            </p>
+        </li>
+        <li class="card card-single-line round-med bordered">
+            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><g><path d="M12,12.75c1.63,0,3.07,0.39,4.24,0.9c1.08,0.48,1.76,1.56,1.76,2.73L18,17c0,0.55-0.45,1-1,1H7c-0.55,0-1-0.45-1-1l0-0.61 c0-1.18,0.68-2.26,1.76-2.73C8.93,13.14,10.37,12.75,12,12.75z M4,13c1.1,0,2-0.9,2-2c0-1.1-0.9-2-2-2s-2,0.9-2,2 C2,12.1,2.9,13,4,13z M5.13,14.1C4.76,14.04,4.39,14,4,14c-0.99,0-1.93,0.21-2.78,0.58C0.48,14.9,0,15.62,0,16.43L0,17 c0,0.55,0.45,1,1,1l3.5,0v-1.61C4.5,15.56,4.73,14.78,5.13,14.1z M20,13c1.1,0,2-0.9,2-2c0-1.1-0.9-2-2-2s-2,0.9-2,2 C18,12.1,18.9,13,20,13z M24,16.43c0-0.81-0.48-1.53-1.22-1.85C21.93,14.21,20.99,14,20,14c-0.39,0-0.76,0.04-1.13,0.1 c0.4,0.68,0.63,1.46,0.63,2.29V18l3.5,0c0.55,0,1-0.45,1-1L24,16.43z M12,6c1.66,0,3,1.34,3,3c0,1.66-1.34,3-3,3s-3-1.34-3-3 C9,7.34,10.34,6,12,6z"/></g></svg>
+            <p>
+                null
+                Contributers
+            </p>
+        </li>
+        <li class="card card-single-line round-med bordered">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 4C7 4 2.73 7.11 1 11.5 2.73 15.89 7 19 12 19s9.27-3.11 11-7.5C21.27 7.11 17 4 12 4zm0 12.5c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            <p>
+                null
+                Pageviews
+            </p>
+        </li>
+    </ul>
+    <h2>One or Zero Product API</h2>
+    <p>
+        We're currently in planning stages of building out a PC parts API service. If you'd be interested in such an API, please join the Discord server and let us know.
+    </p>
+    <h2>Contact One or Zero</h2>
+    <ul class="list-styled">
+        <li>
+            If you're a user, join the Discord server and send a message in the #admin-contact channel.
+        </li>
+        <li>
+            If have a business inquiry, also get in contact on Discord, or you can shoot us an email at <a href="mailto:hello@oneorzero.org">hello@oneorzero.org</a>
+        </li>
+    </ul>
+</div>
+<script>
+</script>
+{% endblock %}

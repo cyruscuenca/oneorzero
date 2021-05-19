@@ -26,17 +26,29 @@ def index():
 def compare(product_class):
 
     types = [
-        'graphics-cards',
-        'cpus',
-        'fans',
-        'cases'
+        ['gpus', 'Graphics cards'],
+        ['cpus', 'Processors'],
+        ['fans', 'Fans'],
+        ['cases', 'Cases'],
+        ['power-supplies', 'Power supplies'],
+        ['motherboards', 'Motherboards'],
+        ['coolers', 'Coolers'],
+        ['drives', 'Drives']
     ]
 
-    if str(product_class) not in types:
+    match = None
+    for _type in types:
+
+        if product_class == _type[0]:
+    
+            match = _type
+            break
+
+    if match is None:
 
         return 'Invalid URL!'
 
-    table = client['oneorzero'][str(product_class)]
+    table = client['oneorzero'][str(match[0])]
     products = list(table.find({}).sort([['_id', -1]]))
     uniques = []
     
@@ -55,7 +67,6 @@ def compare(product_class):
             uniques.append(product)
 
     json_encoded = json.dumps(uniques)
-    product_class = product_class.replace('-', ' ')
 
     valid_axes = [
         'launch_date',
@@ -64,25 +75,41 @@ def compare(product_class):
         'boost_freq',
         'ray_accel',
         'max_perf',
-        'fp16_perf',
-        'fp32_perf',
-        'fp64_perf',
         'stream_processors',
         'trans_count',
         'tbp_d',
         'mem_speed',
-        'mem_size',
+        'mem_size_list',
         'mem_type',
-        'mem_interf',
         'mem_band'
     ]
 
-    return render_template('/pages/chart.html', header=product_class, products=json_encoded, valid_axes=valid_axes)
+    return render_template('/pages/chart.html', header=match[1].lower(), products=json_encoded, valid_axes=valid_axes)
 
-@app.route('/:class/<slug>/')
-def product(slug):
+@app.route('/benchmark/')
+def benchmark():
 
-    return redirect(url_for('error_404'))
+    return render_template('/pages/benchmark.html', header='Benchmark your PC')
+
+@app.route('/about/')
+def about():
+
+    return render_template('/pages/about.html')
+
+@app.route('/contact/')
+def contact():
+
+    return render_template('/pages/contact.html')
+
+@app.route('/api/about')
+def api_about():
+
+    return render_template('/pages/api_about.html')
+
+@app.route('/contribute/')
+def contribute():
+
+    return render_template('/pages/contribute.html')
 
 @app.route('/404')
 def error_404():

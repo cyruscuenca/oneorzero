@@ -1,0 +1,16 @@
+{% extends 'layout-back.html' %}
+
+{% block title %} About {% endblock %}
+{% block content %}
+<div class="banner" style="background-image: url({{ url_for('static', filename='img/banners/banner-light.webp') }})">
+    <div class="tint"></div>
+</div>
+<div class="col col-1 prettify center pillar-text">
+    <h1>One or Zero API</h1>
+    <p>
+        We're currently in planning stages of building out a PC parts API service. If you'd be interested in such an API, please join the Discord server and let us know.
+    </p>
+</div>
+<script>
+</script>
+{% endblock %}

@@ -95,7 +95,7 @@ a:hover {
 <nav id="global-nav" class="no-select">
     <div id="nav">
         <a class="logo" href='/'>
-            <img src="http://localhost:5000/static/img/full-res-logo.png">
+            <img src="https://wiki.oneorzero.org/view/Special:FilePath/One_or_Zero_Logo.png?height=30">
         </a>
         <div></div>
         <ul class="horiz-list">

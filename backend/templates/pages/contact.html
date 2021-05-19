@@ -1,0 +1,21 @@
+{% extends 'layout-back.html' %}
+
+{% block title %} About {% endblock %}
+{% block content %}
+<div class="banner" style="background-image: url({{ url_for('static', filename='img/banners/banner-light.webp') }})">
+    <div class="tint"></div>
+</div>
+<div class="col col-1 prettify center pillar-text">
+    <h1>Contact</h1>
+    <ul class="list-styled">
+        <li>
+            If you're a user, join the Discord server and send a message in the #admin-contact channel.
+        </li>
+        <li>
+            If have a business inquiry, you can shoot us an email at <a href="mailto:hello@oneorzero.org">hello@oneorzero.org</a>
+        </li>
+    </ul>
+</div>
+<script>
+</script>
+{% endblock %}

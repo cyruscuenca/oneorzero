@@ -20,7 +20,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
 
-$wgSitename = "One or Zero";
+$wgSitename = "One or Zero Wiki";
 $wgMetaNamespace = "One_or_Zero";
 
 ## The URL base path to the directory containing the wiki;
@@ -152,6 +152,11 @@ wfLoadExtension( 'ParserFunctions' );
 wfLoadExtension( 'intersection' );
 wfLoadExtension( 'ContributionScores' );
 wfLoadExtension( 'Flow' );
+wfLoadExtension( 'VisualEditor' );
+wfLoadExtension( 'Scribunto' );
+wfLoadExtension( 'Echo' );
+wfLoadExtension( 'RelatedArticles' );
+$wgScribuntoDefaultEngine = 'luastandalone';
 
 $wgNamespaceContentModels[NS_TALK] = 'flow-board';
 $wgNamespaceContentModels[NS_USER_TALK] = 'flow-board';
@@ -160,7 +165,7 @@ $wgContribScoreIgnoreBlockedUsers = true;  // Exclude Blocked Users from the rep
 $wgContribScoresUseRealName = true;        // Use real user names when available - Can be omitted. Only for MediaWiki 1.19 and later.
 $wgContribScoreDisableCache = false;       // Set to true to disable cache for parser function and inclusion of table.
 
-//Each array defines a report - 7,50 is "past 7 days" and "LIMIT 50" - Can be omitted.
+# Each array defines a report - 7,50 is "past 7 days" and "LIMIT 50" - Can be omitted.
 $wgContribScoreReports = array(
     array(7,50),
     array(30,50),
@@ -174,5 +179,8 @@ $wgDebugLogFile = "/var/log/mediawiki/debug-{$wgDBname}.log";
 
 # Prevent new user registrations by anyone
 $wgGroupPermissions['*']['createaccount'] = false;
+$wgGroupPermissions['*']['editsection'] = false;
 $wgGroupPermissions['sysop']['createaccount'] = false;
+$wgGroupPermissions['sysop']['editsection'] = false;
 $wgExternalLinkTarget = '_blank';
+$wgAllowSiteCSSOnRestrictedPages = true;

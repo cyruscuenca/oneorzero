@@ -33,7 +33,7 @@ class Hooks
     // Update One or Zero product database when product pages are updated
     public static function onEditFilter($editor, $text, $section, &$error, $summary) { 
 
-        $response = self::httpPost("http://localhost:1738/madeline", ['data' => json_encode(['wikiPage' => $text])]);
+        $response = self::httpPost("http://localhost:1738/madeline", ['data' => json_encode(['title' => $editor->getTitle(), 'wikiPage' => $text, 'token' => 'SEhKm2D4k0quCZYs6rsh'])]);
         $response = json_decode($response, true);
 
         if ($response == '') {

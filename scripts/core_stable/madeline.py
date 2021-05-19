@@ -14,7 +14,6 @@ import requests
 import datetime
 import pywikibot
 import wikitextparser as wtp
-from pattern3.text.en import singularize
 from pymongo import MongoClient
 from pymemcache.client.base import Client
 import time

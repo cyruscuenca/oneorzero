@@ -13,6 +13,11 @@ app = Flask(__name__)
 # conn = psycopg2.connect("dbname='deals' user='hak' host='localhost' password='123456'")
 client = MongoClient()
 
+@app.errorhandler(404)
+def page_not_found(e):
+
+    return render_template('/pages/404.html'), 404
+
 @app.route('/')
 def index():
 

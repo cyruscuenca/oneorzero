@@ -68,11 +68,11 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     margin-top: 20px;
     font-weight: 500;
-    color: #93a1a1;
+    color: #839192;
 }
 
 .horiz-list li a svg {
-    fill: #93a1a1;
+    fill: #839192;
     width: 15px;
     height: 15px;
     vertical-align: top;
@@ -112,7 +112,6 @@ nav .logo {
 }
 
 footer {
-    background-color: red;
     width: 100%;
     height: 28px;
     line-height: 28px;
@@ -276,7 +275,7 @@ table td {
 .prettify h1, h2, h3, h4, h5, h6 {
     color: #268BD2;
     width: 100%;
-    border-bottom: 3px solid #1F4A54;
+    border-bottom: 3px solid #268BD2;
     padding-bottom: 14px;
 }
 

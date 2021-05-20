@@ -50,7 +50,7 @@
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
     }
 
-    .search svg {
+    .search .search-icon {
         fill: #67addf;
         position: absolute;
         right: 14px;
@@ -65,12 +65,20 @@
         grid-template-columns: 1fr 1fr 155px;
         grid-template-rows: 38px 38px 38px;
         text-align: left;
-        margin-top: 38px;
+        margin-top: 14px;
+        font-size: 12pt;
+    }
+
+    .quick-links li a {
+        height: 26px;
+        line-height: 26px;
     }
 
     .quick-links li a img {
-        height: 28px;
-        vertical-align: middle;
+        height: 26px;
+        width: 26px;
+        vertical-align: bottom;
+        display: inline-block;
         margin-right: 12px;
     }
 
@@ -120,6 +128,29 @@
     .expanded-results {
         display: block !important;
     }
+
+    .section-title {
+        border: none;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        line-height: 100%;
+        padding: 0;
+        margin-top: 18px;
+        font-size: 11pt;
+        color: #839192;
+    }
+    .section-title svg {
+        display: inline-block;
+        fill: #839192;
+        vertical-align: bottom;
+        margin-right: 6px;
+        width: 18px;
+        height: 18px;
+    }
+    .section-title span {
+        float: right;
+    }
 </style>
 <div class="banner" style="background-image: url({{ url_for('static', filename='img/banners/banner-light.webp') }})">
     <div class="tint"></div>
@@ -130,13 +161,22 @@
     </a>
     <h1>{{ quip }}</h1>
     <input placeholder="Search devices" class="round-med" id="search" autocomplete="off" />
-    <svg onclick="referSearch()" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+    <svg onclick="referSearch()" class="search-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
         fill="#000000">
         <path d="M0 0h24v24H0V0z" fill="none" />
         <path
             d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
     </svg>
     <ul id="results"></ul>
+    <h4 class="section-title">
+        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"/><rect fill="none" height="24" width="24"/></g><g><g><path d="M21,8c-1.45,0-2.26,1.44-1.93,2.51l-3.55,3.56c-0.3-0.09-0.74-0.09-1.04,0l-2.55-2.55C12.27,10.45,11.46,9,10,9 c-1.45,0-2.27,1.44-1.93,2.52l-4.56,4.55C2.44,15.74,1,16.55,1,18c0,1.1,0.9,2,2,2c1.45,0,2.26-1.44,1.93-2.51l4.55-4.56 c0.3,0.09,0.74,0.09,1.04,0l2.55,2.55C12.73,16.55,13.54,18,15,18c1.45,0,2.27-1.44,1.93-2.52l3.56-3.55 C21.56,12.26,23,11.45,23,10C23,8.9,22.1,8,21,8z"/><polygon points="15,9 15.94,6.93 18,6 15.94,5.07 15,3 14.08,5.07 12,6 14.08,6.93"/><polygon points="3.5,11 4,9 6,8.5 4,8 3.5,6 3,8 1,8.5 3,9"/></g></g></svg>
+        One or Zero Charts
+        <span>
+            <a href="https://charts.oneorzero.org">
+                Learn more
+            </a>
+        </span>
+    </h4>
     <ul class="quick-links">
         <li>
             <a href="https://charts.oneorzero.org/cpus">
@@ -157,46 +197,40 @@
             </a>
         </li>
         <li>
-            <a>
-                <a href="https://charts.oneorzero.org/memory">
-                    <img src="https://img.icons8.com/color/48/000000/memory-slot.png" />
-                    Memory
-                </a>
+            <a href="https://charts.oneorzero.org/memory">
+                <img src="https://img.icons8.com/color/48/000000/memory-slot.png" />
+                Memory
+            </a>
         </li>
         <li>
-            <a>
-                <a href="https://charts.oneorzero.org/drives">
-                    <img src="https://img.icons8.com/color/48/000000/hdd.png" />
-                    Drives
-                </a>
+            <a href="https://charts.oneorzero.org/drives">
+                <img src="https://img.icons8.com/color/48/000000/hdd.png" />
+                Drives
+            </a>
         </li>
         <li>
-            <a>
-                <a href="https://charts.oneorzero.org/power-supplies">
-                    <img src="https://img.icons8.com/emoji/48/000000/electric-plug.png" />
-                    Power Supplies
-                </a>
+            <a href="https://charts.oneorzero.org/power-supplies">
+                <img src="https://img.icons8.com/emoji/48/000000/electric-plug.png" />
+                Power Supplies
+            </a>
         </li>
         <li>
-            <a>
-                <a href="https://charts.oneorzero.org/cases">
-                    <img src="https://img.icons8.com/plumpy/50/000000/servers-group.png" />
-                    Cases
-                </a>
+            <a href="https://charts.oneorzero.org/cases">
+                <img src="https://img.icons8.com/plumpy/50/000000/servers-group.png" />
+                Cases
+            </a>
         </li>
         <li>
-            <a>
-                <a href="https://charts.oneorzero.org/coolers">
-                    <img src="https://img.icons8.com/color/48/000000/cold.png" />
-                    Coolers
-                </a>
+            <a href="https://charts.oneorzero.org/coolers">
+                <img src="https://img.icons8.com/color/48/000000/cold.png" />
+                Coolers
+            </a>
         </li>
         <li>
-            <a>
-                <a href="https://charts.oneorzero.org/fans">
-                    <img src="https://img.icons8.com/plasticine/100/000000/fan-speed.png" />
-                    Fans
-                </a>
+            <a href="https://charts.oneorzero.org/fans">
+                <img src="https://img.icons8.com/plasticine/100/000000/fan-speed.png" />
+                Fans
+            </a>
         </li>
     </ul>
 </div>

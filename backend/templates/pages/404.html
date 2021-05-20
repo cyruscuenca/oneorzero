@@ -1,0 +1,65 @@
+{% extends 'layout-back.html' %}
+
+{% block title %} 404: Page not found! {% endblock %}
+{% block content %}
+<style>
+    .code-page h1 {
+        font-size: 100vh;
+        line-height: 100%;
+        position: absolute;
+        width: auto;
+        display: inline-block;
+        white-space: nowrap;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        color: #e9f3fa;
+    }
+    .code-page h2 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        border: none;
+        margin: 0 auto;
+        margin-top: 24vh;
+        width: auto;
+        display: inline-block;
+        font-size: 4.75em;
+        color: #2F5660;
+        line-height: 150%;
+    }
+    .code-page h2 > * {
+        color: #2F5660;
+        font-weight: 500;
+    }
+    .code-page h2 span {
+        display: block;
+        font-size: 16pt;
+        font-weight: 400;
+    }
+    .code-page {
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        width: 100%;
+        height: calc(100vh - 60px);
+    }
+    .code-page img {
+        position: absolute;
+        bottom: 0;
+        right: 5%;
+    }
+</style>
+<div class="banner" style="background-image: url({{ url_for('static', filename='img/banners/banner-light.webp') }})">
+    <div class="tint"></div>
+</div>
+<div class="code-page">
+    <h1>Error: 404! Page not found</h1>
+    <h2>
+        Error: 404! Page not found
+        <span>Looking for a chart? Head to <a href="https://charts.oneorzero.org">One or Zero Charts</a>, or you can always head back to the <a href="https://www.oneorzero.org">homepage</a></span>
+    </h2>
+    <img height="192" width="192" src="{{ url_for('static', filename='img/chibi 7.png') }}"/>
+</div>
+{% endblock %}

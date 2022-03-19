@@ -1,2 +1,2 @@
 # deal-consumer
-Deal notification service using GMail API and email parsing
+Deal notification service using Gmail API and email parsing

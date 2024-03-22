@@ -1,11 +1,11 @@
-import os
-import requests as request
+#import os
+#import requests as request
 from time import sleep
 from random import randint
-import psycopg2
+#import psycopg2
 from pymongo import MongoClient
 from flask import Flask, redirect, url_for, render_template, jsonify
-import base64
+#import base64
 import json
 
 app = Flask(__name__)
@@ -120,6 +120,3 @@ def contribute():
 def error_404():
 
     return '404.html'
-
-if __name__ == '__main__':
-    app.run(debug=True, host='127.0.0.1', port=8020)

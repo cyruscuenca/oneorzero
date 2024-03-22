@@ -1,0 +1,34 @@
+1613678825200	geckodriver	INFO	Listening on 127.0.0.1:52661
+1613678825204	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3Snjz6"
+Running Firefox as root in a regular user's session is not supported.  ($XAUTHORITY is /run/user/1000/gdm/Xauthority which is owned by square.)
+1613681807721	geckodriver	INFO	Listening on 127.0.0.1:57651
+1613681808736	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilekUED58"
+Running Firefox as root in a regular user's session is not supported.  ($XAUTHORITY is /run/user/1000/gdm/Xauthority which is owned by square.)
+1613681908188	geckodriver	INFO	Listening on 127.0.0.1:60175
+1613681908195	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiley9YZyo"
+Running Firefox as root in a regular user's session is not supported.  ($XAUTHORITY is /run/user/1000/gdm/Xauthority which is owned by square.)
+1613683723907	geckodriver	INFO	Listening on 127.0.0.1:56075
+1613683723914	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileft7SmP"
+Running Firefox as root in a regular user's session is not supported.  ($XAUTHORITY is /run/user/1000/gdm/Xauthority which is owned by square.)
+1613683741998	geckodriver	INFO	Listening on 127.0.0.1:33857
+1613683742009	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1qAvFB"
+Running Firefox as root in a regular user's session is not supported.  ($XAUTHORITY is /run/user/1000/gdm/Xauthority which is owned by square.)
+1613683808847	geckodriver	INFO	Listening on 127.0.0.1:34399
+1613683808857	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexQS43I"
+Running Firefox as root in a regular user's session is not supported.  ($XAUTHORITY is /run/user/1000/gdm/Xauthority which is owned by square.)
+1613683826774	geckodriver	INFO	Listening on 127.0.0.1:39535
+1613683826781	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqXyoVL"
+Running Firefox as root in a regular user's session is not supported.  ($XAUTHORITY is /run/user/1000/gdm/Xauthority which is owned by square.)
+1618002891697	geckodriver	INFO	Listening on 127.0.0.1:59243
+1618002892710	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilek2t5Nw"
+*** You are running in headless mode.
+
+(/usr/lib/firefox/firefox:164429): GLib-GObject-CRITICAL **: 14:14:53.421: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:164452): GLib-GObject-CRITICAL **: 14:14:53.511: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618002894183	Marionette	INFO	Listening on port 38441
+1618002894230	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:164532): GLib-GObject-CRITICAL **: 14:14:54.439: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.

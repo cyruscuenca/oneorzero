@@ -1,0 +1,5 @@
+#LWP-Cookies-2.0
+Set-Cookie3: oneorzeroToken=e0136e3788ef531be93d44369a99fdd7; path="/"; domain="localhost.local"; path_spec; expires="2021-08-19 03:30:26Z"; HttpOnly=None; version=0
+Set-Cookie3: oneorzeroUserID=3; path="/"; domain="localhost.local"; path_spec; expires="2021-08-19 03:30:26Z"; HttpOnly=None; version=0
+Set-Cookie3: oneorzeroUserName="OneOrZero%20Bot"; path="/"; domain="localhost.local"; path_spec; expires="2021-08-19 03:30:26Z"; HttpOnly=None; version=0
+Set-Cookie3: oneorzero_session=lm9eihd9em5g28hbdbse04crl10mje4g; path="/"; domain="localhost.local"; path_spec; discard; HttpOnly=None; version=0

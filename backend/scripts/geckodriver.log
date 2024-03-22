@@ -1,0 +1,289 @@
+1613695695984	geckodriver	INFO	Listening on 127.0.0.1:34517
+1613695695988	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileATgQJT"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1613695697321	Marionette	INFO	Listening on port 45073
+1613695697412	Marionette	WARN	TLS certificate errors will be ignored for this session
+1613695697421	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1613695703817	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+
+(firefox:37211): GLib-GObject-CRITICAL **: 16:48:23.978: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1613695704020	Marionette	INFO	Stopped listening on port 45073
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 1690: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z, line 7580: uncaught exception: [object Object]
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1613695737119	geckodriver	INFO	Listening on 127.0.0.1:39819
+1613695737130	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuRgrLk"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1613695738448	Marionette	INFO	Listening on port 34711
+1613695738548	Marionette	WARN	TLS certificate errors will be ignored for this session
+1613695738560	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1613695744552	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+
+(firefox:37456): GLib-GObject-CRITICAL **: 16:49:04.687: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1613695744756	Marionette	INFO	Stopped listening on port 34711
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z, line 7580: uncaught exception: [object Object]
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1613695768546	geckodriver	INFO	Listening on 127.0.0.1:48789
+1613695768551	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehq4MeN"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1613695769872	Marionette	INFO	Listening on port 35217
+1613695769968	Marionette	WARN	TLS certificate errors will be ignored for this session
+1613695769976	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1613695776054	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+
+(firefox:37888): GLib-GObject-CRITICAL **: 16:49:36.193: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1613695776258	Marionette	INFO	Stopped listening on port 35217
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 1690: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z, line 7580: uncaught exception: [object Object]
+1613695823925	geckodriver	INFO	Listening on 127.0.0.1:51603
+1613695823936	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileIlxeyu"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1613695825220	Marionette	INFO	Listening on port 41261
+1613695825258	Marionette	WARN	TLS certificate errors will be ignored for this session
+1613695825268	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1613695831403	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+
+(firefox:38211): GLib-GObject-CRITICAL **: 16:50:31.538: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1613695831608	Marionette	INFO	Stopped listening on port 41261
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 1690: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z, line 7580: uncaught exception: [object Object]
+1613696157735	geckodriver	INFO	Listening on 127.0.0.1:57997
+1613696158749	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQ4Mn8f"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1613696160325	Marionette	INFO	Listening on port 42897
+1613696160368	Marionette	WARN	TLS certificate errors will be ignored for this session
+1613696160384	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1613696166473	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+
+(firefox:2234): GLib-GObject-CRITICAL **: 16:56:06.603: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1613696166676	Marionette	INFO	Stopped listening on port 42897
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 1690: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z, line 7580: uncaught exception: [object Object]
+1613696183828	geckodriver	INFO	Listening on 127.0.0.1:40641
+1613696183839	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileexyGZJ"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1613696184980	Marionette	INFO	Listening on port 33485
+1613696185062	Marionette	WARN	TLS certificate errors will be ignored for this session
+1613696185070	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 775))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 422))
+1613696192276	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+
+(firefox:3012): GLib-GObject-CRITICAL **: 16:56:32.425: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1613696192479	Marionette	INFO	Stopped listening on port 33485
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z, line 7580: uncaught exception: [object Object]
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1613696229011	geckodriver	INFO	Listening on 127.0.0.1:50757
+1613696229017	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileUGVkjo"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1613696230334	Marionette	INFO	Listening on port 42841
+1613696230436	Marionette	WARN	TLS certificate errors will be ignored for this session
+1613696230444	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1613696237121	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+
+(firefox:3313): GLib-GObject-CRITICAL **: 16:57:17.281: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+1613696237324	Marionette	INFO	Stopped listening on port 42841
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 1690: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z, line 7580: uncaught exception: [object Object]
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1613766921991	geckodriver	INFO	Listening on 127.0.0.1:49189
+1613766923000	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileKWHQ20"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1613766924333	Marionette	INFO	Listening on port 43453
+1613766924421	Marionette	WARN	TLS certificate errors will be ignored for this session
+1613766924431	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1613766944384	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1613766944591	Marionette	INFO	Stopped listening on port 43453
+
+(firefox:26030): GLib-GObject-CRITICAL **: 12:35:44.928: g_object_get: assertion 'G_IS_OBJECT (object)' failed
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z, line 7596: uncaught exception: [object Object]
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.googletagmanager.com/gtm.js?id=GTM-58DFX4Z line 3 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
